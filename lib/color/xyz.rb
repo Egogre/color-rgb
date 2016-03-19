@@ -4,7 +4,7 @@ module Color
     attr_reader :r, :g, :b
 
     def self.from_rgb(rgb_color)
-      self.new(rgb_color)
+      new(rgb_color)
     end
 
     def initialize(color)

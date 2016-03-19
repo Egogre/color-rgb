@@ -4,7 +4,7 @@ module Color
     attr_reader :x, :y, :z
 
     def self.from_xyz(xyz_color)
-      self.new(xyz_color)
+      new(xyz_color)
     end
 
     def initialize(color)

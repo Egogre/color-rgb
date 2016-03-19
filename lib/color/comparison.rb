@@ -3,7 +3,7 @@ module Color
     attr_reader :rgb_color
 
     def self.distance(rgb, rgb_match)
-      color_comparitor = self.new(rgb)
+      color_comparitor = new(rgb)
       color_comparitor.compare(rgb_match)
     end
 

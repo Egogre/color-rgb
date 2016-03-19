@@ -7,14 +7,14 @@ module Color
       if rgb_array.length != 3
         raise RGBArraySizeError.new("RGB array should contain 3 values")
       end
-      self.new(rgb_array[0], rgb_array[1], rgb_array[2])
+      new(rgb_array[0], rgb_array[1], rgb_array[2])
     end
 
     def self.from_int(rgb_int)
       red   = (rgb_int >> 16) & 0xFF;
       green = (rgb_int >> 8) & 0xFF;
       blue  = rgb_int & 0xFF;
-      self.new(red, green, blue)
+      new(red, green, blue)
     end
 
     def initialize(r, g, b)
